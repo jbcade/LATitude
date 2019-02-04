@@ -1,21 +1,23 @@
 import React, { Component } from 'react';
 import { Button, Col, Label, Modal, ModalHeader, ModalBody, ModalFooter, Nav, NavItem, NavLink, Row, TabContent, TabPane, Table} from 'reactstrap';
+import { FilePicker } from 'react-file-picker';
 import Select from 'react-select';
 import {RadioGroup, Radio} from 'react-radio-group';
 import classnames from 'classnames';
 
 class Surveys extends Component {
-	
+
   constructor(props) {
     super(props);
     this.toggleTab = this.toggleTab.bind(this);
 	this.toggleModal = this.toggleModal.bind(this);
     this.state = {
       activeTab: '1',
-	  modal: false
+	    modal: false,
+			exportFormat: 'json'
     };
   }
-  
+
   toggleTab(tab) {
     if (this.state.activeTab !== tab) {
       this.setState({
@@ -23,18 +25,18 @@ class Surveys extends Component {
       });
     }
   }
-  
+
   toggleModal() {
     this.setState({
       modal: !this.state.modal
     });
   }
-  
+
   render() {
 	return (
 		<React.Fragment>
 			<Row>
-				<Col className="overflow-auto" xs="10">
+				<Col className="overflow-auto" xs="9">
 					<Nav pills id="survey-list">
 						{this.props.surveys.map(function(survey, index){
 							//console.log(survey);
@@ -44,10 +46,13 @@ class Surveys extends Component {
 						}, this)}
 					</Nav>
 				</Col>
-				<Col className="overflow-auto" xs="2">
+				<Col className="overflow-auto" xs="3">
 					<Nav pills>
 						<NavItem id="survey-controls">
 							<NavLink id="new-survey" className="btn-secondary" href="#" onClick={this.props.generateSurvey}>New</NavLink>
+						</NavItem>
+						<NavItem id="import-surveys">
+						  <FilePicker extensions={['json']} onChange={(fileObject) => {this.props.surveyImport(fileObject);}}><NavLink id="import-survey-file" className="btn-secondary" href="#" onClick={this.props.generateSurvey}>Import</NavLink></FilePicker>
 						</NavItem>
 						<NavItem>
 							<NavLink id="export-surveys" className="btn-secondary" href="#" onClick={this.toggleModal}>Export</NavLink>
@@ -86,16 +91,17 @@ class Surveys extends Component {
 						name="format"
 						id="format-select"
 						clearable={false}
-						value={"csv"}
+						value={"json"}
 						onChange={this.handleFormatChange}
 						options={[
-							{ value: 'csv', label: 'CSV' },
+							{ value: 'json', label: 'LATitude Survey File'},
+							{ value: 'csv', label: 'CSV', disabled:true },
 							{ value: 'questions', label: 'Questions Only', disabled:true },
 						]}
-					/>	
+					/>
 				</ModalBody>
 				<ModalFooter>
-					<Button color="primary" onClick={() => { this.props.surveyExport(); }}>Download</Button>{' '}
+					<Button color="primary" onClick={() => { this.props.surveyExport(this.state.exportFormat); }}>Download</Button>{' '}
 					<Button color="secondary" onClick={this.toggleModal}>Cancel</Button>
 				</ModalFooter>
 			</Modal>
@@ -105,7 +111,7 @@ class Surveys extends Component {
 };
 
 class Question extends Component {
-	
+
   constructor(props) {
     super(props);
     this.state = {};
@@ -117,7 +123,7 @@ class Question extends Component {
     }
     return false;
   }
-  
+
   render() {
 	return (
 		<tr>{(this.props.id === 0)?<th className={(this.props.first) ? 'first-row' : ''} rowSpan={this.props.rowLength}>{this.props.categoryName}</th>:null}<td className="survey-question">{this.props.question}</td><td className={"survey-input" +  ((this.props.first) ? ' first-row':'')}>
@@ -128,7 +134,7 @@ class Question extends Component {
 			  <Radio className="radio-input" value="1" />Agree
 			  <Radio className="radio-input" value="2" />Strongly Agree
 			</RadioGroup>
-		</td></tr>	
+		</td></tr>
 	);
   };
 };
