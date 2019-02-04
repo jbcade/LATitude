@@ -219,21 +219,11 @@ table > thead > tr > th, table > thead > tr > td {
 }
 
 .overflow-auto {
-	overflow-x: auto;
+	overflow-x: auto;	
 }
 
-#survey-controls, #import-surveys {
+#survey-controls {
 	margin-right:.3rem;
-}
-
-#import-survey-file {
-	color:black;
-}
-
-#import-survey-file:hover {
-  color: #fff;
-  background-color: #5a6268;
-  border-color: #545b62;
 }
 
 #data-pane > div > h3 {
@@ -327,7 +317,7 @@ tr:hover .update-network {
 }
 
 #jurisdiction-name {
-	text-transform:capitalize;
+	text-transform:capitalize;	
 }
 
 .ecomap {
@@ -335,11 +325,11 @@ tr:hover .update-network {
 }
 
 .government {
-	background-color: #f0f8ff !important;
+	background-color: #f0f8ff !important;	
 }
 
 .business {
-	background-color: #98FB98 !important;
+	background-color: #98FB98 !important;	
 }
 
 .ngo {
@@ -347,23 +337,23 @@ tr:hover .update-network {
 }
 
 .community {
-	background-color: #FFFFE0 !important;
+	background-color: #FFFFE0 !important;	
 }
 
 .indent0 {
-
+	
 }
 
 .indent1 {
-	padding-left: 3rem !important;
+	padding-left: 3rem !important;	
 }
 
 .indent2 {
-	padding-left: 6rem !important;
+	padding-left: 6rem !important;	
 }
 
 .indent3 {
-	padding-left: 9rem !important;
+	padding-left: 9rem !important;	
 }
 
 .rolodex {
@@ -396,7 +386,7 @@ tr:hover .update-network {
 
 .brand-breakout {
 	font-size: 1rem;
-	font-weight: 400;
+	font-weight: 400;	
 }
 
 .weighted {
@@ -425,7 +415,7 @@ tr:hover .update-network {
 
 .gumby {
 	resize: both;
-	overflow: auto;
+	overflow: auto;	
 	width:30vw;
 	min-height:200px;
 	min-width:300px;

@@ -35,7 +35,7 @@ class Assessment extends Component {
 						{question: "People in my community are committed to the well-being of the community.", type: "likert"},
 						{question: "People in my community have hope about the future.", type: "likert"},
 						{question: "People in my community help each other.", type: "likert"},
-						{question: "My community treats people fairly no matter what their background is.", type: "likert"}
+						{question: "My community treats people fairly no matter what their background is.", type: "likert"}					
 					],"aggregate":[null, null, null, null, null]},
 					{"Resources": [
 						{question: "My community supports programs for children and families.", type: "likert"},
@@ -50,19 +50,19 @@ class Assessment extends Component {
 						{question: "People in my community work together to improve the community.", type: "likert"},
 						{question: "My community looks at its successes and failures so it can learn from the past.", type: "likert"},
 						{question: "My community develops skills and finds resources to solve its problems and reach its goals.", type: "likert"},
-						{question: "My community has priorities and sets goals for the future.", type: "likert"}
+						{question: "My community has priorities and sets goals for the future.", type: "likert"}					
 					],"aggregate":[null, null, null, null, null, null]},
 					{"Disaster Mgmt.": [
 						{question: "My community tries to prevent disasters.", type: "likert"},
 						{question: "My community actively prepares for future disasters.", type: "likert"},
 						{question: "My community can provide emergency services during a disaster.", type: "likert"},
-						{question: "My community has services and programs to help people after a disaster.", type: "likert"}
+						{question: "My community has services and programs to help people after a disaster.", type: "likert"}					
 					],"aggregate":[null, null, null, null]},
 					{"Information and Comm.": [
 						{question: "My community keeps people informed (for example, via television, radio, newspaper, Internet, phone, neighbors) about issues that are relevant to them.", type: "likert"},
 						{question: "If a disaster occurs, my community provides information about what to do.", type: "likert"},
 						{question: "I get information/communication through my community to help with my home and work life.", type: "likert"},
-						{question: "People in my community trust public officials.", type: "likert"}
+						{question: "People in my community trust public officials.", type: "likert"}					
 					],"aggregate":[null, null, null, null]}
 				]
 			},
@@ -74,7 +74,7 @@ class Assessment extends Component {
 						{question: "People in my community are committed to the well-being of the community.", type: "likert"},
 						{question: "People in my community have hope about the future.", type: "likert"},
 						{question: "People in my community help each other.", type: "likert"},
-						{question: "My community treats people fairly no matter what their background is.", type: "likert"}
+						{question: "My community treats people fairly no matter what their background is.", type: "likert"}					
 					], aggregate: [null, null, null, null, null]},
 					{"Resources": [
 						{question: "My community supports programs for children and families.", type: "likert"},
@@ -89,19 +89,19 @@ class Assessment extends Component {
 						{question: "People in my community work together to improve the community.", type: "likert"},
 						{question: "My community looks at its successes and failures so it can learn from the past.", type: "likert"},
 						{question: "My community develops skills and finds resources to solve its problems and reach its goals.", type: "likert"},
-						{question: "My community has priorities and sets goals for the future.", type: "likert"}
+						{question: "My community has priorities and sets goals for the future.", type: "likert"}					
 					], aggregate: [null, null, null, null, null, null]},
 					{"Disaster Mgmt.": [
 						{question: "My community tries to prevent disasters.", type: "likert"},
 						{question: "My community actively prepares for future disasters.", type: "likert"},
 						{question: "My community can provide emergency services during a disaster.", type: "likert"},
-						{question: "My community has services and programs to help people after a disaster.", type: "likert"}
+						{question: "My community has services and programs to help people after a disaster.", type: "likert"}					
 					], aggregate: [null, null, null, null]},
 					{"Information and Comm.": [
 						{question: "My community keeps people informed (for example, via television, radio, newspaper, Internet, phone, neighbors) about issues that are relevant to them.", type: "likert"},
 						{question: "If a disaster occurs, my community provides information about what to do.", type: "likert"},
 						{question: "I get information/communication through my community to help with my home and work life.", type: "likert"},
-						{question: "People in my community trust public officials.", type: "likert"}
+						{question: "People in my community trust public officials.", type: "likert"}					
 					], aggregate: [null, null, null, null]}
 				]
 			},
@@ -237,7 +237,7 @@ class Assessment extends Component {
 				   "dataset":[{"name":"Total receiving public assistance in the past 12 months","datapoints":[508,"19.76%"]},{"name":"Living in family households","subcategory":1,"datapoints":[508,"19.76%"]},{"name":"Married-couple family","subcategory":2,"datapoints":[393,"15.29%"]},{"name":"Male householder, no wife present, family","subcategory":2,"datapoints":[29,"1.13%"]},{"name":"Female householder, no husband present, family","subcategory":2,"datapoints":[86,"3.35%"]},{"name":"Living in nonfamily households","subcategory":1,"datapoints":[0,"0.00%"]},{"name":"Total not receiving public assistance in the past 12 months","datapoints":[2063,"80.24%"]},{"name":"Living in family households","subcategory":1,"datapoints":[2053,"79.85%"]},{"name":"Married-couple family","subcategory":2,"datapoints":[1635,"63.59%"]},{"name":"Male householder, no wife present, family","subcategory":2,"datapoints":[119,"4.63%"]},{"name":"Female householder, no husband present, family","subcategory":2,"datapoints":[299,"11.63%"]},{"name":"Living in nonfamily households","subcategory":1,"datapoints":[10,"0.39%"]}],
 				   "description":"<b>Test</b>"
 				}
-
+				
 			},
 			"Housing":{
 				"Transitional Housing":{
@@ -256,7 +256,7 @@ class Assessment extends Component {
 				}
 			},
 			"Business, Occupational, and Economic":{
-
+				
 			},
 			"Transportation":{
 				"Transportation Assistance Programs":{
@@ -417,7 +417,7 @@ class Assessment extends Component {
 					"types":["address","text"],
 					"dataset":[{"name":"","datapoints":["",""]}],
 					"description":"<b>Test</b>"
-				}
+				}				
 			},
 			"Crime":{
 				"Hate Crime by Incident Type":{
@@ -485,7 +485,7 @@ class Assessment extends Component {
 			{question: "People in my community are committed to the well-being of the community.", type: "likert"},
 			{question: "People in my community have hope about the future.", type: "likert"},
 			{question: "People in my community help each other.", type: "likert"},
-			{question: "My community treats people fairly no matter what their background is.", type: "likert"}
+			{question: "My community treats people fairly no matter what their background is.", type: "likert"}					
 		],"aggregate":[null, null, null, null, null]},
 		{"Resources": [
 			{question: "My community supports programs for children and families.", type: "likert"},
@@ -500,19 +500,19 @@ class Assessment extends Component {
 			{question: "People in my community work together to improve the community.", type: "likert"},
 			{question: "My community looks at its successes and failures so it can learn from the past.", type: "likert"},
 			{question: "My community develops skills and finds resources to solve its problems and reach its goals.", type: "likert"},
-			{question: "My community has priorities and sets goals for the future.", type: "likert"}
+			{question: "My community has priorities and sets goals for the future.", type: "likert"}					
 		],"aggregate":[null, null, null, null, null, null]},
 		{"Disaster Mgmt.": [
 			{question: "My community tries to prevent disasters.", type: "likert"},
 			{question: "My community actively prepares for future disasters.", type: "likert"},
 			{question: "My community can provide emergency services during a disaster.", type: "likert"},
-			{question: "My community has services and programs to help people after a disaster.", type: "likert"}
+			{question: "My community has services and programs to help people after a disaster.", type: "likert"}					
 		],"aggregate":[null, null, null, null]},
 		{"Information and Comm.": [
 			{question: "My community keeps people informed (for example, via television, radio, newspaper, Internet, phone, neighbors) about issues that are relevant to them.", type: "likert"},
 			{question: "If a disaster occurs, my community provides information about what to do.", type: "likert"},
 			{question: "I get information/communication through my community to help with my home and work life.", type: "likert"},
-			{question: "People in my community trust public officials.", type: "likert"}
+			{question: "People in my community trust public officials.", type: "likert"}					
 		],"aggregate":[null, null, null, null]}
 	]
   };
@@ -525,7 +525,7 @@ class Assessment extends Component {
 			return response.json();
 		}
 		throw new Error('Network response was not ok.');
-	}).then(function(profile) {
+	}).then(function(profile) { 
 		console.log(profile);
 		this.setState({jurisdiction: profile.jurisdiction, overlays: profile.overlays, population: profile.population, data: fromJS(profile.data)});
 	}.bind(this)).catch(function(error) {
@@ -553,7 +553,7 @@ class Assessment extends Component {
 	*/
 	this.initializeMap(stateAbbr,countyName,placeName);
   }
-
+  
   handleLoad = () => {
 	var importedProfile = JSON.parse(localStorage.getItem("profile"))
 	importedProfile.data = fromJS(importedProfile.data);
@@ -577,7 +577,7 @@ class Assessment extends Component {
 	reader.readAsText(input);
 	return true;
   }
-
+  
   handleSave = () => {
 	localStorage.setItem("profile", JSON.stringify(this.state));
 	return true;
@@ -602,7 +602,7 @@ class Assessment extends Component {
 	exportLink.remove();
 	return true;
   }
-
+  
   initializeMap = (state, county, place) => {
 	geocoder = new window.google.maps.Geocoder();
 	//var jurisdictionBounds;
@@ -611,7 +611,7 @@ class Assessment extends Component {
 		address = place + ", " + state + " USA";
 	} else {
 		address = county + ", " + state + " USA";
-	}
+	}		
 	geocoder.geocode( { 'address': address}, function(results, status) {
 		if (status === 'OK') {
 			//console.log(JSON.stringify(results[0]));
@@ -620,10 +620,10 @@ class Assessment extends Component {
 			//console.log(jurisdictionBounds);
 			//console.log(JSON.stringify(results[0].geometry.location));
 			/*var jurisdictionBounds = new window.google.maps.LatLngBounds(
-				results[0].geometry.viewport.getSouthWest(),
+				results[0].geometry.viewport.getSouthWest(), 
 				results[0].geometry.viewport.getNorthEast()
 			);*/
-			var bounds = {
+			var bounds = { 
 				ne: {
 				  lat: results[0].geometry.viewport.getNorthEast().lat(),
 				  lng: results[0].geometry.viewport.getNorthEast().lng(),
@@ -645,7 +645,7 @@ class Assessment extends Component {
 		return;
 	}.bind(this));
   }
-
+  
   newSurvey = () => {
 	var stagedSurvey = Object.assign({}, this.surveyTemplate);
 	console.log(stagedSurvey);
@@ -655,79 +655,47 @@ class Assessment extends Component {
 	//console.log(this.state.surveys);
 	return true;
   }
-
+  
   renameParticipant = (evt, participantNumber) => {
 	this.setState(update(this.state, { surveys: {[participantNumber]: { name: {$set: evt.currentTarget.textContent} }}}));
 	console.log(this.state.surveys);
 	return true;
   }
-
+  
   handleSurveyInput = (value, survey, categoryIndex, category, item) => {
 	this.setState(update(this.state, {surveys: {[survey]: {questionnaire: {[categoryIndex]: {[category]: {[item]: {value: {$set: value} } }, aggregate: {$splice: [[item, 1, parseInt(value, 10)]] } } } } } }));
 	return true;
   }
-
-  surveyExport = (format) => {
-  console.log(format);
+  
+  surveyExport = () => {
 	console.log("finalize");
-  var dataURL;
-  if (format === 'json') {
-    var stringifiedSurveys = JSON.stringify(this.state.surveys);
-    dataURL = "data:application/json,";
-    dataURL = dataURL + stringifiedSurveys;
-  } else {
-    dataURL = "data:text/tab-separated-values,";
-  	var header = [""];
-  	var template = this.surveyTemplate.questionnaire;
-  	console.log(template);
-  	for (var i = 0, len = template.length; i < len; i++) {
-  		var innerQuestions = template[i];
-  		var categoryName = Object.keys(innerQuestions)[0];
-  		console.log(categoryName);
-  		for (var iq = 0, innerLen = innerQuestions[categoryName].length; iq < innerLen; iq++) {
-  			console.log(innerQuestions[categoryName][iq]);
-  			var questionName = innerQuestions[categoryName][iq]['question'];
-  			header.push(questionName);
-  		}
-  	}
-  	var headerString = header.join('\t') + '\n';
-  	dataURL = dataURL + headerString;
-  }
+	var dataURL = "data:text/tab-separated-values,";
+	var header = [""];
+	var template = this.surveyTemplate.questionnaire;
+	console.log(template);
+	for (var i = 0, len = template.length; i < len; i++) {
+		var innerQuestions = template[i];
+		var categoryName = Object.keys(innerQuestions)[0];
+		console.log(categoryName);
+		for (var iq = 0, innerLen = innerQuestions[categoryName].length; iq < innerLen; iq++) {
+			console.log(innerQuestions[categoryName][iq]);
+			var questionName = innerQuestions[categoryName][iq]['question'];
+			header.push(questionName);
+		}
+	}
+	var headerString = header.join('\t') + '\n';
+	dataURL = dataURL + headerString;
 	console.log(encodeURI(dataURL));
 	var exportLink = document.createElement("a");
 	exportLink.style.display = "none";
 	exportLink.href = encodeURI(dataURL);
-  var date = new Date();
-  date = date.toISOString().slice(0, 10);
-  var fileName = '-' + date + '.' + format;
-  if(this.state.jurisdiction) {
-    fileName = this.state.jurisdiction.place.name + fileName;
-  }
-  exportLink.download = 'surveys-' + fileName;
+	exportLink.download = "Community Resilience Surveys.tsv";
 	document.body.appendChild(exportLink);
 	exportLink.click();
 	exportLink.remove();
 	return true;
   }
-
-  surveyImport(input) {
-    var reader = new FileReader();
-  	reader.onload = (e) => {
-      console.log(this);
-  		try {
-  			var importedSurveys = JSON.parse(e.target.result);
-        this.setState(update(this.state, { surveys: {$push: importedSurveys }}));
-        //console.log(this.state.surveys);
-        //this.setState({surveys: this.state.surveys.concat(importedSurveys)});
-  			return true;
-  		} catch (e) {
-  			return false;
-  		}
-  	};
-  	reader.readAsText(input);
-  	return true;
-  }
-
+  
   buildSurveyExport(format, surveyTracker) {
 	//console.log(format);
 	var dataURL = "data:text/tab-separated-values,";
@@ -754,7 +722,7 @@ class Assessment extends Component {
 	console.log(dataURL + headerString + bodyString);
 	return dataURL + headerString + bodyString;
   }
-
+  
   //exportSurveyButton = document.getElementById('export-surveys');
   /*exportSurveyButton.addEventListener('click', function() {
 		var format = document.getElementById('survey-export-format').value;
@@ -807,26 +775,26 @@ class Assessment extends Component {
 	}
 	this.state.edgesObject.update([manipulation]);
   }
-
+  
   stakeholderEvents = {
 	select: this.selectedStakeholderFeature.bind(this)
   }
-
+  
   setEdges = edges => {
 	  console.log(edges);
 	  this.setState({edgesObject: edges});
   }
-
+  
   setNodes = nodes => {
 	console.log(nodes);
     this.setState({nodesObject: nodes});
   }
-
+  
   storeSwot(evt, quadrant) {
 	this.setState(update(this.state, { swot: { [quadrant]: {$set: evt.target.value} } }));
 	console.log(this.state.swot);
   }
-
+  
   storeData(evt, data, type, reference, replacedArray = null, dpIndex = null) {
 	console.log(evt.target.textContent);
 	console.log(data);
@@ -838,7 +806,7 @@ class Assessment extends Component {
 	//console.log(copy);
 	//this.setState({data: copy});
   }
-
+  
   mapStakeholder(evt, node) {
 	console.log(evt.currentTarget);
 	var label;
@@ -848,7 +816,7 @@ class Assessment extends Component {
 	var titleContent = el.querySelector('.stakeholder-title').textContent;
 	var title = titleContent ? '\n' + titleContent : "";
 	var orgContent = el.querySelector('.stakeholder-org').textContent;
-	var org = orgContent ? '\n' + orgContent : "";
+	var org = orgContent ? '\n' + orgContent : "";	
 	if(name) {
 		label = '<b>' + name + '</b>' + title + org;
 	} else {
@@ -883,13 +851,13 @@ class Assessment extends Component {
 			if (nodes[mi].id === nodeId) {
 				console.log("IN");
 				nodes.splice(mi, 1, replacementNode);
-				this.setState({
+				this.setState({ 
 				  'nodes': nodes
 				})
 			}
 	}
   }
-
+	
   addRow(evt, data, reference, index, datapoints, subcat, dataNodes) {
 	console.log(dataNodes);
 	datapoints = datapoints.deref();
@@ -918,30 +886,30 @@ class Assessment extends Component {
 	var newId = this.state.nextStakeholder;
 	index = index + 1;
 	copy.splice(index, 0, {name:"", id:newId, title:"", organization:"", type:"Government", contact:"", Remarks:""});
-
+	
 	var insertNode = {id: newId, label: '<b>Stakeholder</b>'}
 	//var oldGraph = this.state.stakeholderGraph;
 	//var nodeArray = oldGraph.nodes.slice();
 	//var edgeArray = oldGraph.nodes.slice();
 	//nodeArray.push(insertNode);
-
+	
 	newId++;
 	//console.log(this.state.nodes.get(nodes[0]));
-	this.setState({nodes: this.state.nodes.concat([insertNode]), stakeholders: copy, nextStakeholder: newId});
+	this.setState({nodes: this.state.nodes.concat([insertNode]), stakeholders: copy, nextStakeholder: newId});	
 	return;
   }
-
+  
   deleteRow(evt, data, reference) {
 	var copy = data.deleteIn(reference).deref();
 	this.setState({data: copy});
   }
-
+  
   deleteStakeholder(evt, index) {
 	var copy = this.state.stakeholders;
 	copy.splice(index, 1);
 	this.setState({stakeholders: copy});
   }
-
+  
   toggleTab(tab) {
     if (this.state.frame.activeTab !== tab) {
       this.setState({
@@ -949,7 +917,7 @@ class Assessment extends Component {
       });
     }
   }
-
+	
   render() {
     return (
 		<div className="container-fluid">
@@ -1006,7 +974,7 @@ class Assessment extends Component {
 			</Nav>
 			<TabContent activeTab={this.state.frame.activeTab}>
 			  <TabPane tabId="1">
-				<Surveys surveys={this.state.surveys} generateSurvey={this.newSurvey} surveyExport={this.surveyExport} surveyImport={this.surveyImport.bind(this)} renameParticipant={this.renameParticipant} handleInput={this.handleSurveyInput} />
+				<Surveys surveys={this.state.surveys} generateSurvey={this.newSurvey} surveyExport={this.surveyExport} renameParticipant={this.renameParticipant} handleInput={this.handleSurveyInput} />
 			  </TabPane>
 			  <TabPane tabId="2">
 				<Row>
