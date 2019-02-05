@@ -95,8 +95,7 @@ class Surveys extends Component {
 						onChange={this.handleFormatChange}
 						options={[
 							{ value: 'json', label: 'LATitude Survey File'},
-							{ value: 'csv', label: 'CSV', disabled:true },
-							{ value: 'csv', label: 'CSV' },
+							{ value: 'csv', label: 'CSV', disabled:true }
 						]}
 					/>
 				</ModalBody>
