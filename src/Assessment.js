@@ -663,7 +663,7 @@ class Assessment extends Component {
   }
 
   handleSurveyInput = (value, survey, categoryIndex, category, item) => {
-	this.setState(update(this.state, {surveys: {[survey]: {questionnaire: {[categoryIndex]: {[category]: {[item]: {value: {$set: value} } }, aggregate: {$splice: [[item, 1, parseInt(value, 10)]] } } } } } }));
+	this.setState(update(this.state, {surveys: {[survey]: {questionnaire: {[categoryIndex]: {[category]: {[item]: {value: {$set: value} } }, aggregate: {$splice: [[item, 1, value]] } } } } } }));
 	return true;
   }
 

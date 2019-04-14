@@ -4,12 +4,12 @@ import {Radar, Doughnut, Polar} from 'react-chartjs-2'; /*Pie, defaults*/
 import pattern from 'patternomaly';
 
 class Analysis extends Component {
-	
+
   constructor(props) {
     super(props);
     this.state = {};
   };
-  
+
   shouldComponentUpdate(nextProps, nextState) {
 	console.log(nextProps.visible);
     if (nextProps.visible) {
@@ -18,7 +18,7 @@ class Analysis extends Component {
 	console.log("rejected Analysis update");
     return false;
   }
-  
+
   render() {
 	console.log(this.props.data);
 	return (
@@ -53,7 +53,7 @@ class SurveySentiment extends Component {
     super(props);
     this.state = {};
   };
-  
+
   render() {
 	var sentiment = [];
 	if(this.props.surveys) {
@@ -95,7 +95,7 @@ class SurveySentiment extends Component {
 			}
 		]
 	};
-	
+
 	return (
 		<Card body className="gumby">
 		  <CardTitle>Survey Sentiment</CardTitle>
@@ -107,9 +107,9 @@ class SurveySentiment extends Component {
 			},
 			"scale": {
 				"ticks": {
-					"stepSize": 0.5,
-					"suggestedMin": -2,
-					"suggestedMax": 2
+					"stepSize": 2,
+					"suggestedMin": -5,
+					"suggestedMax": 5
 				}
 			}
 		  }} />
@@ -130,7 +130,7 @@ class Glance extends Component {
     }
     return false;
   }*/
-  
+
   checkForPlaceholder = function(size, firstRow) {
 	if (size === 1 && firstRow === '') {
 		return 0;
@@ -138,12 +138,12 @@ class Glance extends Component {
 		return size;
 	}
   };
-  
+
   render() {
 	var healthy = {color:"forestgreen", fontSize:"1.5rem"}
 	var communityCenters = this.checkForPlaceholder(this.props.data.getIn([7, "Recreational Opportunities", "Community Centers", "dataset"]).size, this.props.data.getIn([7, "Recreational Opportunities", "Community Centers", "dataset", 0, "name"]));
 	var recreationCenters = this.checkForPlaceholder(this.props.data.getIn([7, "Recreational Opportunities", "Recreation Centers", "dataset"]).size, this.props.data.getIn([7, "Recreational Opportunities", "Recreation Centers", "dataset", 0, "name"]));
-	
+
 	return (
 		<Card body className="gumby">
 		  <CardTitle>Community at a Glance</CardTitle>
@@ -177,7 +177,7 @@ class HateCrimeMotivation extends Component {
     }
     return false;
   }*/
-  
+
   render() {
 	var visible = false;
 	var datapoints = this.props.data;
@@ -188,7 +188,7 @@ class HateCrimeMotivation extends Component {
 		if(!isNaN(el)) {
 			visible = true;
 			break;
-		}		
+		}
 	}
 	/*for (let el of this.props.data) {
 		var datapoint = parseFloat(el.getIn(["datapoints", "0"]));
@@ -198,7 +198,7 @@ class HateCrimeMotivation extends Component {
 			break;
 		}
 	}*/
-	
+
 	const hateCrimeByMotivation = (canvas) => {
 		var datapoints = this.props.data;
 		console.log(datapoints.getIn([0, "name"]));
@@ -217,7 +217,7 @@ class HateCrimeMotivation extends Component {
 			]
 		};
 	};
-	
+
 	if(visible) {
 		return (
 				<Card body className="gumby">
@@ -248,7 +248,7 @@ class HateCrimeIncidentType extends Component {
     }
     return false;
   }*/
-  
+
   render() {
 	var visible = false;
 	for (let el of this.props.data) {
@@ -269,7 +269,7 @@ class HateCrimeIncidentType extends Component {
 				valueArray.push(datapoint);
 			}
 		}
-		
+
 		return {
 			labels: labelArray,
 			datasets:[
@@ -309,7 +309,7 @@ class Nativity extends Component {
     }
     return false;
   }*/
-  
+
   render() {
 	var visible = false;
 	for (let el of this.props.data) {
@@ -330,7 +330,7 @@ class Nativity extends Component {
 				valueArray.push(datapoint);
 			}
 		}
-		
+
 		return {
 			labels: labelArray,
 			datasets:[
@@ -375,7 +375,7 @@ class ChildPublicAssistance extends Component {
     }
     return false;
   }*/
-  
+
   render() {
 	//console.log(this.props.data.getIn([ 0, "datapoints", "1"]));
 	//console.log(parseFloat(this.props.data.getIn([ 0, "datapoints", "1"])));
@@ -393,7 +393,7 @@ class ChildPublicAssistance extends Component {
 			]
 		};
 	};
-	
+
 	return (
 		<Doughnut data={childPublicAssistanceStatus} options={{cutoutPercentage: 0, legend: {position: "bottom"}}}/>
 	);
@@ -412,7 +412,7 @@ class ChildPoverty extends Component {
     }
     return false;
   }*/
-  
+
   render() {
 	const childPovertyStatus = (canvas) => {
 		console.log((parseFloat(this.props.data.getIn([1, "datapoints", "0"])) + parseFloat(this.props.data.getIn([2, "datapoints", "0"])) + parseFloat(this.props.data.getIn([3, "datapoints", "0"]))));
@@ -429,7 +429,7 @@ class ChildPoverty extends Component {
 			]
 		};
 	};
-	
+
 	return (
 		<Doughnut data={childPovertyStatus} options={{cutoutPercentage: 0, legend: {position: "bottom"}}} />
 	);

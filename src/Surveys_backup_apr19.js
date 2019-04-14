@@ -2,10 +2,8 @@ import React, { Component } from 'react';
 import { Button, Col, Label, Modal, ModalHeader, ModalBody, ModalFooter, Nav, NavItem, NavLink, Row, TabContent, TabPane, Table} from 'reactstrap';
 import { FilePicker } from 'react-file-picker';
 import Select from 'react-select';
-import Slider from 'rc-slider';
-/*import {RadioGroup, Radio} from 'react-radio-group';*/
+import {RadioGroup, Radio} from 'react-radio-group';
 import classnames from 'classnames';
-import 'rc-slider/assets/index.css';
 
 class Surveys extends Component {
 
@@ -126,50 +124,7 @@ class Question extends Component {
   }
 
   render() {
-    const marks = {
-      '-5': {
-        style: {
-          color: '#666',
-          whiteSpace: 'nowrap',
-          left: '5%'
-        },
-        label: 'Strongly Disagree'
-      },
-      '-2': {
-        style: {
-          color: '#666'
-        },
-        label: 'Disagree'
-      },
-      0: {
-        style: {
-          color: '#666'
-        },
-        label: 'Neutral'
-      },
-      2: {
-        style: {
-          color: '#666'
-        },
-        label: 'Agree'
-      },
-      5: {
-        style: {
-          color: '#666',
-          whiteSpace: 'nowrap',
-          left: '95%'
-        },
-        label: 'Strongly Agree'
-      }
-    };
-    return (
-      <tr>{(this.props.id === 0)?<th className={(this.props.first) ? 'first-row' : ''} rowSpan={this.props.rowLength}>{this.props.categoryName}</th>:null}<td className="survey-question">{this.props.question}</td>
-        <td className={"survey-input" +  ((this.props.first) ? ' first-row':'')}>
-          <Slider min={-5} max={5} defaultValue={0} marks={marks} value={this.props.value?this.props.value:0} onChange={(value) => this.props.handleInput(value, this.props.survey, this.props.categoryIndex, this.props.categoryName, this.props.id)} />
-        </td>
-      </tr>
-    );
-	/*return (
+	return (
 		<tr>{(this.props.id === 0)?<th className={(this.props.first) ? 'first-row' : ''} rowSpan={this.props.rowLength}>{this.props.categoryName}</th>:null}<td className="survey-question">{this.props.question}</td><td className={"survey-input" +  ((this.props.first) ? ' first-row':'')}>
 			<RadioGroup className="radio-caption" onChange={(value) => this.props.handleInput(value, this.props.survey, this.props.categoryIndex, this.props.categoryName, this.props.id)} selectedValue={this.props.value?this.props.value:false} name={this.props.survey + " " + this.props.categoryName + ' ' + (this.props.id + 1)}>
 			  <Radio className="radio-input" value="-2" />Strongly Disagree
@@ -179,7 +134,7 @@ class Question extends Component {
 			  <Radio className="radio-input" value="2" />Strongly Agree
 			</RadioGroup>
 		</td></tr>
-	);*/
+	);
   };
 };
 
